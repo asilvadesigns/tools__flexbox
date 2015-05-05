@@ -1,0 +1,7 @@
+@mixin media($type) {
+    @if $type == mobile--min {
+        @media only screen and (min-width: $sreen__mobile--min) {
+            @content;
+        }
+    }
+}

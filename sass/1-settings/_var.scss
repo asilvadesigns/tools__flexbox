@@ -1,0 +1,33 @@
+$base-font-size: 16px;
+$base-line-unit: 1.333;
+$base-line-height: $base-font-size * $base-line-unit;
+
+$rhythm-unit: "em";
+$round-to-nearest-half-line: true;
+
+$h1: 3.157;
+$h2: 2.369;
+$h3: 1.777;
+$h4: 1.333;
+$h5: 1;
+$h6: .75;
+
+$sreen__mobile--min: 60em;
+
+$gutter: rhythm(1.5);
+
+
+$primary__color: deepskyblue;
+$neutral__color: lightgray;
+
+$body__color: darken($neutral__color, 30%);
+
+$site__header__bg: $primary__color;
+$site__main__bg: lighten($neutral__color, 15%);
+$site__footer__bg: lighten($neutral__color, 5%);
+
+$flex__parent__border: lighten($neutral__color, 5%);
+$flex__child__bg: $primary__color;
+
+$heading__color: $primary__color;
+$heading--primary__color: darken($neutral__color, 10%);

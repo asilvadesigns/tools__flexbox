@@ -1,0 +1,51 @@
+body {
+    font-size: $base-font-size;
+    line-height: $base-line-unit;
+    font-family: "Open Sans", sans-serif;
+    color: $body__color;
+}
+
+h1, .h1 { 
+    @include adjust-font-size-to($h1 * $base-font-size);
+}
+h2, .h2 { 
+    @include adjust-font-size-to($h2 * $base-font-size);
+}
+h3, .h3 { 
+    @include adjust-font-size-to($h3 * $base-font-size);
+}
+h4, .h4 { 
+    @include adjust-font-size-to($h4 * $base-font-size);
+}
+h5, .h5 { 
+    @include adjust-font-size-to($h5 * $base-font-size);
+}
+h6, .h6, small, .small { 
+    @include adjust-font-size-to($h6 * $base-font-size);
+}
+
+.heading--group {
+    @include rhythm-padding(2);
+}
+
+.heading, .heading--note, p, pre {
+    @include padding-leader(1);
+}
+
+.heading--primary {
+    color: $heading--primary__color;
+    font-weight: 300;
+}
+
+.heading--default {
+    &:after {
+        color: $heading--primary__color;
+        content: " (default)";
+    }
+}
+
+.heading--note {
+    &:before {
+        content: "Note: ";
+    }
+}

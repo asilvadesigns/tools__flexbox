@@ -1,0 +1,19 @@
+[class*="site__"] {
+    @include padding-trailer(1);
+}
+.site__header {
+    color: white;
+    background-color: $site__header__bg;
+}
+.site__main {
+    background-color: $site__main__bg;
+    @include padding-trailer(2);
+    .heading {
+        color: $heading__color;
+    }
+}
+.site__footer {
+    color: darken($site__footer__bg, 30%);
+    background-color: $site__footer__bg;
+    @include rhythm-padding(1,4);
+}

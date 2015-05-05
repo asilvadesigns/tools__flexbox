@@ -1,0 +1,12 @@
+.count__reset {
+    counter-reset: section;
+}
+.count__increment {
+    position: relative;
+    &:before {
+        position: absolute;
+        left: -1.2em;
+        counter-increment: section;
+        content: counter(section);
+    }
+}

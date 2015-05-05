@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Alberto Silva">
+    <meta name="keywords" content="CSS, Flexbox, CSS Flexbox">
+    <meta name="description" content="A personal reference for all the CSS Flexbox">
+    <title>CSS Flexbox - A Quick Reference</title>
+    <link rel="stylesheet" href="stylesheets/screen.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <header class="site__header">
+        <div class="container">
+            <h5 class="heading">CSS Flexbox - A Quick Reference</h5>
+        </div>
+    </header>
+    <main class="site__main">
+        <article class="container count__reset">
+            <header class="heading--group">
+                <h2 class="heading--primary">flex-direction:<br>row | row-reverse | column | column-reverse</h2>
+            </header>
+            <section class="row flex__direction--1">
+                <aside class="col--aside">
+                    <h4 class="heading heading--default count__increment">row</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-direction: row;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__direction--2">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">row reverse</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-direction: row-reverse;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__direction--3">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">column</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-direction: column;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__direction--4">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">column reverse</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-direction: column-reverse;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <article class="container count__reset">
+            <header class="heading--group">
+                <h2 class="heading--primary">flex-wrap:<br>nowrap | wrap | wrap-reverse | inherit</h2>
+                <h5 class="heading--note">will affect flex-items with a "width".</h5>
+            </header>
+            <section class="row flex__wrap--1">
+                <aside class="col--aside">
+                    <h4 class="heading heading--default count__increment">nowrap</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__wrap--2">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">wrap</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__wrap--3">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">wrap-reverse</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <article class="container count__reset">
+            <header class="heading--group">
+                <h2 class="heading--primary">justify-content:<br>flex-start | flex-end | center | space-between | space-around</h2>
+                <!-- <h5 class="heading--note">will affect flex-items with a "width".</h5> -->
+            </header>
+            <section class="row flex__justify--1">
+                <aside class="col--aside">
+                    <h4 class="heading heading--default count__increment">flex-start</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__justify--2">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">flex-end</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__justify--3">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">center</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__justify--4">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">space-between</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__justify--5">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">space-around</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <article class="container count__reset">
+            <header class="heading--group">
+                <h2 class="heading--primary">align-items:<br>flex-start | flex-end | center | baseline | stretch</h2>
+                <h5 class="heading--note">changes invisible unless flex-container has a "height".<br>Exception: baseline.</h5>
+            </header>
+            <section class="row flex__align-items--1">
+                <aside class="col--aside">
+                    <h4 class="heading heading--default count__increment">flex-start</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__align-items--2">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">flex-end</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__align-items--3">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">center</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__align-items--4">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">baseline</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__align-items--5">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">stretch</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <article class="container count__reset">
+            <header class="heading--group">
+                <h2 class="heading--primary">align-content:
+                    <br>flex-start | flex-end | center | space-between | space-around | stretch</h2>
+                <h5 class="heading--note">changes invisible unless flex-container has a "height" AND flex-item has a "width".</h5>
+            </header>
+            <section class="row flex__align-content--1">
+                <aside class="col--aside">
+                    <h4 class="heading heading--default count__increment">flex-start</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__align-content--2">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">flex-end</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__align-content--3">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">center</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__align-content--4">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">space-between</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__align-content--5">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">space-around</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__align-content--6">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">stretch</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <article class="container count__reset">
+            <header class="heading--group">
+                <h2 class="heading--primary">order:<br>integer</h2>
+            </header>
+            <section class="row flex__order--1">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">order</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-direction: row;
+}
+.flex__child:nth-child(2) {
+    order: 1;
+}
+.flex__child:nth-child(3) {
+    order: 2;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__order--2">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">order</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-direction: row;
+}
+.flex__child:nth-child(2) {
+    order: -1;
+}
+.flex__child:nth-child(3) {
+    order: 2;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <article class="container count__reset">
+            <header class="heading--group">
+                <h2 class="heading--primary">flex-grow:<br>integer</h2>
+            </header>
+            <section class="row flex__grow--1">
+                <aside class="col--aside">
+                    <h4 class="heading heading--default count__increment">flex-grow</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-direction: row;
+}
+.flex__child {
+    flex-grow: 0;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__grow--2">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">flex-grow</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-direction: row;
+}
+.flex__child {
+    flex-grow: 1;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__grow--3">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">flex-grow</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-direction: row;
+}
+.flex__child {
+    flex-grow: 1;
+}
+.flex__child:nth-child(2) {
+    flex-grow: 3;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__grow--4">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">flex-grow</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-direction: row;
+}
+.flex__child {
+    flex-grow: 1;
+}
+.flex__child:nth-child(2) {
+    flex-grow: 20;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <article class="container count__reset">
+            <header class="heading--group">
+                <h2 class="heading--primary">flex-shrink:<br>integer</h2>
+            </header>
+            <section class="row flex__shrink--1">
+                <aside class="col--aside">
+                    <h4 class="heading heading--default count__increment">flex-shrink</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-direction: row;
+}
+.flex__child {
+    flex-basis: = 16.6666667%);
+    flex-grow: 0;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__shrink--2">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">flex-shrink</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-direction: row;
+}
+.flex__child {
+    flex-basis: = 16.6666667%);
+    flex-grow: 0;
+}
+.flex__child:nth-child(2) {
+    flex-shrink: 1;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__shrink--3">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">flex-shrink</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-direction: row;
+}
+.flex__child {
+    flex-basis: = 16.6666667%);
+    flex-grow: 0;
+}
+.flex__child:nth-child(2) {
+    flex-shrink: 2;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__shrink--4">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">flex-shrink</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-direction: row;
+}
+.flex__child {
+    flex-basis: = 16.6666667%);
+    flex-grow: 0;
+}
+.flex__child:nth-child(2) {
+    flex-shrink: 20;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="row flex__shrink--5">
+                <aside class="col--aside">
+                    <h4 class="heading count__increment">flex-shrink</h4>
+                    <pre>
+.flex__parent {
+    display: flex;
+    flex-direction: row;
+}
+.flex__child {
+    flex-basis: = 16.6666667%);
+    flex-grow: 0;
+}
+.flex__child:nth-child(2) {
+    flex-shrink: 20;
+}
+.flex__child:nth-child(5) {
+    flex-shrink: 20;
+}
+.flex__child:nth-child(6) {
+    flex-shrink: 40;
+}
+                    </pre>
+                </aside>
+                <div class="col--content">
+                    <div class="flex__parent">
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                        <div class="flex__child"></div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer class="site__footer">
+        <div class="container">
+            <h5 class="heading">Colophon</h5>
+            <p>Designed &amp; developed by <a href="http://www.albertosilva.me" target="_blank">yours truly.</a> CSS is written in SASS with Compass, typeset in Open Sans. View code <a href="https://github.com/asilvadesigns/tools__colors" target="_blank">here</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+
+
