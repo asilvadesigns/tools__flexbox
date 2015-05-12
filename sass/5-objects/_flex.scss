@@ -1,11 +1,14 @@
 .flex__parent {
     @include margin-leader(1);
+    @include border-radius(rhythm(.25));    
     padding: rhythm(.25);
     counter-reset: flex;
     border: rhythm(.125) solid $flex__parent__border;
 }
 .flex__child {
     padding: rhythm(1);
+    margin: rhythm(.15);
+    @include border-radius(rhythm(.25));
     text-align: center;
     color: white;
     background-color: $flex__child__bg;
@@ -364,3 +367,92 @@
         flex-shrink: 40;
     }
 }
+
+
+/////////////////////////
+//
+//
+[class*="flex__align-self--"] {
+    .flex__parent {
+        height: 10em;
+    }
+}
+.flex__align-self--1 {
+    .flex__parent {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .flex__child:nth-child(2) {
+        align-self: flex-start;
+    }
+    .flex__child:nth-child(4) {
+        align-self: flex-start;
+    }
+    .flex__child:nth-child(6) {
+        align-self: flex-start;
+    }
+}
+.flex__align-self--2 {
+    .flex__parent {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .flex__child:nth-child(2) {
+        align-self: flex-end;
+    }
+    .flex__child:nth-child(4) {
+        align-self: flex-end;
+    }
+    .flex__child:nth-child(6) {
+        align-self: flex-end;
+    }
+}
+.flex__align-self--3 {
+    .flex__parent {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .flex__child:nth-child(2) {
+        align-self: center;
+    }
+    .flex__child:nth-child(4) {
+        align-self: center;
+    }
+    .flex__child:nth-child(6) {
+        align-self: center;
+    }
+}
+.flex__align-self--4 {
+    .flex__parent {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .flex__child:nth-child(2) {
+        font-size: 1.5em;
+        align-self: baseline;
+    }
+    .flex__child:nth-child(4) {
+        font-size: .5em;
+        align-self: baseline;
+    }
+    .flex__child:nth-child(6) {
+        font-size: 2em;
+        align-self: baseline;
+    }
+}
+.flex__align-self--5 {
+    .flex__parent {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .flex__child:nth-child(2) {
+        align-self: stretch;
+    }
+    .flex__child:nth-child(4) {
+        align-self: stretch;
+    }
+    .flex__child:nth-child(6) {
+        align-self: stretch;
+    }
+}
+
