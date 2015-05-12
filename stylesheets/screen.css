@@ -184,9 +184,10 @@ h6, .h6, small, .small {
   padding: 0.33325em;
   counter-reset: flex;
   border: 0.16663em solid #cdcdcd;
+  overflow-x: scroll;
 }
 
-/* line 8, ../sass/5-objects/_flex.scss */
+/* line 9, ../sass/5-objects/_flex.scss */
 .flex__child {
   padding: 1.333em;
   margin: 0.19995em;
@@ -197,431 +198,431 @@ h6, .h6, small, .small {
   color: white;
   background-color: deepskyblue;
 }
-/* line 15, ../sass/5-objects/_flex.scss */
+/* line 16, ../sass/5-objects/_flex.scss */
 .flex__child:before {
   counter-increment: flex;
   content: counter(flex);
 }
-/* line 19, ../sass/5-objects/_flex.scss */
+/* line 20, ../sass/5-objects/_flex.scss */
 .flex__child:nth-child(2) {
   background-color: #00b4f0;
 }
-/* line 22, ../sass/5-objects/_flex.scss */
+/* line 23, ../sass/5-objects/_flex.scss */
 .flex__child:nth-child(3) {
   background-color: #00a8e0;
 }
-/* line 25, ../sass/5-objects/_flex.scss */
+/* line 26, ../sass/5-objects/_flex.scss */
 .flex__child:nth-child(4) {
   background-color: #009dd1;
 }
-/* line 28, ../sass/5-objects/_flex.scss */
+/* line 29, ../sass/5-objects/_flex.scss */
 .flex__child:nth-child(5) {
   background-color: #0091c2;
 }
-/* line 31, ../sass/5-objects/_flex.scss */
+/* line 32, ../sass/5-objects/_flex.scss */
 .flex__child:nth-child(6) {
   background-color: #0086b3;
 }
-/* line 34, ../sass/5-objects/_flex.scss */
+/* line 35, ../sass/5-objects/_flex.scss */
 .flex__child:nth-child(7) {
   background-color: #007aa3;
 }
-/* line 37, ../sass/5-objects/_flex.scss */
+/* line 38, ../sass/5-objects/_flex.scss */
 .flex__child:nth-child(8) {
   background-color: #006f94;
 }
-/* line 40, ../sass/5-objects/_flex.scss */
+/* line 41, ../sass/5-objects/_flex.scss */
 .flex__child:nth-child(9) {
   background-color: #006385;
 }
-/* line 43, ../sass/5-objects/_flex.scss */
+/* line 44, ../sass/5-objects/_flex.scss */
 .flex__child:nth-child(10) {
   background-color: #005875;
 }
-/* line 46, ../sass/5-objects/_flex.scss */
+/* line 47, ../sass/5-objects/_flex.scss */
 .flex__child:nth-child(11) {
   background-color: #004c66;
 }
 
-/* line 54, ../sass/5-objects/_flex.scss */
+/* line 55, ../sass/5-objects/_flex.scss */
 .flex__direction--1 .flex__parent {
   display: flex;
   flex-direction: row;
 }
 
-/* line 61, ../sass/5-objects/_flex.scss */
+/* line 62, ../sass/5-objects/_flex.scss */
 .flex__direction--2 .flex__parent {
   display: flex;
   flex-direction: row-reverse;
 }
 
-/* line 68, ../sass/5-objects/_flex.scss */
+/* line 69, ../sass/5-objects/_flex.scss */
 .flex__direction--3 .flex__parent {
   display: flex;
   flex-direction: column;
 }
 
-/* line 75, ../sass/5-objects/_flex.scss */
+/* line 76, ../sass/5-objects/_flex.scss */
 .flex__direction--4 .flex__parent {
   display: flex;
   flex-direction: column-reverse;
 }
 
-/* line 86, ../sass/5-objects/_flex.scss */
+/* line 87, ../sass/5-objects/_flex.scss */
 [class*="flex__wrap--"] .flex__child {
   width: 20%;
 }
 
-/* line 91, ../sass/5-objects/_flex.scss */
+/* line 92, ../sass/5-objects/_flex.scss */
 .flex__wrap--1 .flex__parent {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 }
 
-/* line 99, ../sass/5-objects/_flex.scss */
+/* line 100, ../sass/5-objects/_flex.scss */
 .flex__wrap--2 .flex__parent {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-/* line 107, ../sass/5-objects/_flex.scss */
+/* line 108, ../sass/5-objects/_flex.scss */
 .flex__wrap--3 .flex__parent {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
 }
 
-/* line 118, ../sass/5-objects/_flex.scss */
+/* line 119, ../sass/5-objects/_flex.scss */
 .flex__justify--1 .flex__parent {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
 }
 
-/* line 125, ../sass/5-objects/_flex.scss */
+/* line 126, ../sass/5-objects/_flex.scss */
 .flex__justify--2 .flex__parent {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
 }
 
-/* line 132, ../sass/5-objects/_flex.scss */
+/* line 133, ../sass/5-objects/_flex.scss */
 .flex__justify--3 .flex__parent {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
 }
 
-/* line 139, ../sass/5-objects/_flex.scss */
+/* line 140, ../sass/5-objects/_flex.scss */
 .flex__justify--4 .flex__parent {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
 }
 
-/* line 146, ../sass/5-objects/_flex.scss */
+/* line 147, ../sass/5-objects/_flex.scss */
 .flex__justify--5 .flex__parent {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
 }
 
-/* line 157, ../sass/5-objects/_flex.scss */
+/* line 158, ../sass/5-objects/_flex.scss */
 [class*="flex__align-items--"] .flex__parent {
   height: 10em;
 }
 
-/* line 162, ../sass/5-objects/_flex.scss */
+/* line 163, ../sass/5-objects/_flex.scss */
 .flex__align-items--1 .flex__parent {
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-start;
 }
 
-/* line 169, ../sass/5-objects/_flex.scss */
+/* line 170, ../sass/5-objects/_flex.scss */
 .flex__align-items--2 .flex__parent {
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-end;
 }
 
-/* line 176, ../sass/5-objects/_flex.scss */
+/* line 177, ../sass/5-objects/_flex.scss */
 .flex__align-items--3 .flex__parent {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
 }
 
-/* line 183, ../sass/5-objects/_flex.scss */
+/* line 184, ../sass/5-objects/_flex.scss */
 .flex__align-items--4 .flex__parent {
   display: flex;
   flex-flow: row nowrap;
   align-items: baseline;
 }
-/* line 188, ../sass/5-objects/_flex.scss */
+/* line 189, ../sass/5-objects/_flex.scss */
 .flex__align-items--4 .flex__child:nth-child(2) {
   font-size: 1.5em;
 }
-/* line 191, ../sass/5-objects/_flex.scss */
+/* line 192, ../sass/5-objects/_flex.scss */
 .flex__align-items--4 .flex__child:nth-child(4) {
   font-size: .5em;
 }
-/* line 194, ../sass/5-objects/_flex.scss */
+/* line 195, ../sass/5-objects/_flex.scss */
 .flex__align-items--4 .flex__child:nth-child(6) {
   font-size: 2em;
 }
 
-/* line 199, ../sass/5-objects/_flex.scss */
+/* line 200, ../sass/5-objects/_flex.scss */
 .flex__align-items--5 .flex__parent {
   display: flex;
   flex-flow: row nowrap;
   align-items: stretch;
 }
 
-/* line 210, ../sass/5-objects/_flex.scss */
+/* line 211, ../sass/5-objects/_flex.scss */
 [class*="flex__align-content--"] .flex__parent {
   height: 14em;
 }
-/* line 213, ../sass/5-objects/_flex.scss */
+/* line 214, ../sass/5-objects/_flex.scss */
 [class*="flex__align-content--"] .flex__child {
   width: 10%;
 }
 
-/* line 218, ../sass/5-objects/_flex.scss */
+/* line 219, ../sass/5-objects/_flex.scss */
 .flex__align-content--1 .flex__parent {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
 }
 
-/* line 225, ../sass/5-objects/_flex.scss */
+/* line 226, ../sass/5-objects/_flex.scss */
 .flex__align-content--2 .flex__parent {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-end;
 }
 
-/* line 232, ../sass/5-objects/_flex.scss */
+/* line 233, ../sass/5-objects/_flex.scss */
 .flex__align-content--3 .flex__parent {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
 }
 
-/* line 239, ../sass/5-objects/_flex.scss */
+/* line 240, ../sass/5-objects/_flex.scss */
 .flex__align-content--4 .flex__parent {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
 }
 
-/* line 246, ../sass/5-objects/_flex.scss */
+/* line 247, ../sass/5-objects/_flex.scss */
 .flex__align-content--5 .flex__parent {
   display: flex;
   flex-wrap: wrap;
   align-content: space-around;
 }
 
-/* line 253, ../sass/5-objects/_flex.scss */
+/* line 254, ../sass/5-objects/_flex.scss */
 .flex__align-content--6 .flex__parent {
   display: flex;
   flex-wrap: wrap;
   align-content: stretch;
 }
 
-/* line 265, ../sass/5-objects/_flex.scss */
+/* line 266, ../sass/5-objects/_flex.scss */
 [class*="flex__order--"] .flex__parent {
   display: flex;
   flex-direction: row;
 }
 
-/* line 271, ../sass/5-objects/_flex.scss */
+/* line 272, ../sass/5-objects/_flex.scss */
 .flex__order--1 .flex__child:nth-child(2) {
   order: 1;
 }
-/* line 274, ../sass/5-objects/_flex.scss */
+/* line 275, ../sass/5-objects/_flex.scss */
 .flex__order--1 .flex__child:nth-child(3) {
   order: 2;
 }
 
-/* line 279, ../sass/5-objects/_flex.scss */
+/* line 280, ../sass/5-objects/_flex.scss */
 .flex__order--2 .flex__child:nth-child(2) {
   order: -1;
 }
-/* line 282, ../sass/5-objects/_flex.scss */
+/* line 283, ../sass/5-objects/_flex.scss */
 .flex__order--2 .flex__child:nth-child(3) {
   order: 2;
 }
 
-/* line 292, ../sass/5-objects/_flex.scss */
+/* line 293, ../sass/5-objects/_flex.scss */
 [class*="flex__grow--"] .flex__parent {
   display: flex;
   flex-direction: row;
 }
 
-/* line 298, ../sass/5-objects/_flex.scss */
+/* line 299, ../sass/5-objects/_flex.scss */
 .flex__grow--1 .flex__child {
   flex-grow: 0;
 }
 
-/* line 306, ../sass/5-objects/_flex.scss */
+/* line 307, ../sass/5-objects/_flex.scss */
 .flex__grow--2 .flex__child {
   flex-grow: 1;
 }
 
-/* line 311, ../sass/5-objects/_flex.scss */
+/* line 312, ../sass/5-objects/_flex.scss */
 .flex__grow--3 .flex__child {
   flex-grow: 1;
 }
-/* line 313, ../sass/5-objects/_flex.scss */
+/* line 314, ../sass/5-objects/_flex.scss */
 .flex__grow--3 .flex__child:nth-child(2) {
   flex-grow: 3;
 }
 
-/* line 319, ../sass/5-objects/_flex.scss */
+/* line 320, ../sass/5-objects/_flex.scss */
 .flex__grow--4 .flex__child {
   flex-grow: 1;
 }
-/* line 321, ../sass/5-objects/_flex.scss */
+/* line 322, ../sass/5-objects/_flex.scss */
 .flex__grow--4 .flex__child:nth-child(2) {
   flex-grow: 20;
 }
 
-/* line 332, ../sass/5-objects/_flex.scss */
+/* line 333, ../sass/5-objects/_flex.scss */
 [class*="flex__shrink--"] .flex__parent {
   display: flex;
   flex-direction: row;
 }
-/* line 336, ../sass/5-objects/_flex.scss */
+/* line 337, ../sass/5-objects/_flex.scss */
 [class*="flex__shrink--"] .flex__child {
   flex-basis: 16.66667%;
   flex-grow: 0;
 }
 
-/* line 345, ../sass/5-objects/_flex.scss */
+/* line 346, ../sass/5-objects/_flex.scss */
 .flex__shrink--2 .flex__child:nth-child(2) {
   flex-shrink: 1;
 }
 
-/* line 350, ../sass/5-objects/_flex.scss */
+/* line 351, ../sass/5-objects/_flex.scss */
 .flex__shrink--3 .flex__child:nth-child(2) {
   flex-shrink: 2;
 }
 
-/* line 355, ../sass/5-objects/_flex.scss */
+/* line 356, ../sass/5-objects/_flex.scss */
 .flex__shrink--4 .flex__child:nth-child(2) {
   flex-shrink: 20;
 }
 
-/* line 360, ../sass/5-objects/_flex.scss */
+/* line 361, ../sass/5-objects/_flex.scss */
 .flex__shrink--5 .flex__child:nth-child(2) {
   flex-shrink: 20;
 }
-/* line 363, ../sass/5-objects/_flex.scss */
+/* line 364, ../sass/5-objects/_flex.scss */
 .flex__shrink--5 .flex__child:nth-child(5) {
   flex-shrink: 20;
 }
-/* line 366, ../sass/5-objects/_flex.scss */
+/* line 367, ../sass/5-objects/_flex.scss */
 .flex__shrink--5 .flex__child:nth-child(6) {
   flex-shrink: 40;
 }
 
-/* line 376, ../sass/5-objects/_flex.scss */
+/* line 377, ../sass/5-objects/_flex.scss */
 [class*="flex__align-self--"] .flex__parent {
   height: 10em;
 }
 
-/* line 381, ../sass/5-objects/_flex.scss */
+/* line 382, ../sass/5-objects/_flex.scss */
 .flex__align-self--1 .flex__parent {
   display: flex;
   flex-flow: row nowrap;
 }
-/* line 385, ../sass/5-objects/_flex.scss */
+/* line 386, ../sass/5-objects/_flex.scss */
 .flex__align-self--1 .flex__child:nth-child(2) {
   align-self: flex-start;
 }
-/* line 388, ../sass/5-objects/_flex.scss */
+/* line 389, ../sass/5-objects/_flex.scss */
 .flex__align-self--1 .flex__child:nth-child(4) {
   align-self: flex-start;
 }
-/* line 391, ../sass/5-objects/_flex.scss */
+/* line 392, ../sass/5-objects/_flex.scss */
 .flex__align-self--1 .flex__child:nth-child(6) {
   align-self: flex-start;
 }
 
-/* line 396, ../sass/5-objects/_flex.scss */
+/* line 397, ../sass/5-objects/_flex.scss */
 .flex__align-self--2 .flex__parent {
   display: flex;
   flex-flow: row nowrap;
 }
-/* line 400, ../sass/5-objects/_flex.scss */
+/* line 401, ../sass/5-objects/_flex.scss */
 .flex__align-self--2 .flex__child:nth-child(2) {
   align-self: flex-end;
 }
-/* line 403, ../sass/5-objects/_flex.scss */
+/* line 404, ../sass/5-objects/_flex.scss */
 .flex__align-self--2 .flex__child:nth-child(4) {
   align-self: flex-end;
 }
-/* line 406, ../sass/5-objects/_flex.scss */
+/* line 407, ../sass/5-objects/_flex.scss */
 .flex__align-self--2 .flex__child:nth-child(6) {
   align-self: flex-end;
 }
 
-/* line 411, ../sass/5-objects/_flex.scss */
+/* line 412, ../sass/5-objects/_flex.scss */
 .flex__align-self--3 .flex__parent {
   display: flex;
   flex-flow: row nowrap;
 }
-/* line 415, ../sass/5-objects/_flex.scss */
+/* line 416, ../sass/5-objects/_flex.scss */
 .flex__align-self--3 .flex__child:nth-child(2) {
   align-self: center;
 }
-/* line 418, ../sass/5-objects/_flex.scss */
+/* line 419, ../sass/5-objects/_flex.scss */
 .flex__align-self--3 .flex__child:nth-child(4) {
   align-self: center;
 }
-/* line 421, ../sass/5-objects/_flex.scss */
+/* line 422, ../sass/5-objects/_flex.scss */
 .flex__align-self--3 .flex__child:nth-child(6) {
   align-self: center;
 }
 
-/* line 426, ../sass/5-objects/_flex.scss */
+/* line 427, ../sass/5-objects/_flex.scss */
 .flex__align-self--4 .flex__parent {
   display: flex;
   flex-flow: row nowrap;
 }
-/* line 430, ../sass/5-objects/_flex.scss */
+/* line 431, ../sass/5-objects/_flex.scss */
 .flex__align-self--4 .flex__child:nth-child(2) {
   font-size: 1.5em;
   align-self: baseline;
 }
-/* line 434, ../sass/5-objects/_flex.scss */
+/* line 435, ../sass/5-objects/_flex.scss */
 .flex__align-self--4 .flex__child:nth-child(4) {
   font-size: .5em;
   align-self: baseline;
 }
-/* line 438, ../sass/5-objects/_flex.scss */
+/* line 439, ../sass/5-objects/_flex.scss */
 .flex__align-self--4 .flex__child:nth-child(6) {
   font-size: 2em;
   align-self: baseline;
 }
 
-/* line 444, ../sass/5-objects/_flex.scss */
+/* line 445, ../sass/5-objects/_flex.scss */
 .flex__align-self--5 .flex__parent {
   display: flex;
   flex-flow: row nowrap;
 }
-/* line 448, ../sass/5-objects/_flex.scss */
+/* line 449, ../sass/5-objects/_flex.scss */
 .flex__align-self--5 .flex__child:nth-child(2) {
   align-self: stretch;
 }
-/* line 451, ../sass/5-objects/_flex.scss */
+/* line 452, ../sass/5-objects/_flex.scss */
 .flex__align-self--5 .flex__child:nth-child(4) {
   align-self: stretch;
 }
-/* line 454, ../sass/5-objects/_flex.scss */
+/* line 455, ../sass/5-objects/_flex.scss */
 .flex__align-self--5 .flex__child:nth-child(6) {
   align-self: stretch;
 }
