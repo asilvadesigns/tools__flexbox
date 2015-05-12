@@ -1,6 +1,6 @@
-body {
-    font-size: $base-font-size;
-    line-height: $base-line-unit;
+@include establish-baseline;
+
+body {    
     font-family: "Open Sans", sans-serif;
     color: $body__color;
 }

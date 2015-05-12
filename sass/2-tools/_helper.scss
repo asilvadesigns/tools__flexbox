@@ -4,11 +4,14 @@
 .count__increment {
     position: relative;
     &:before {
+        padding-right: rhythm(.5);
+        counter-increment: section;
+        content: counter(section);
         @include media(mobile--min) {
             position: absolute;
             left: -1.2em;
+            padding-right: 0;
+
         }
-        counter-increment: section;
-        content: counter(section);
     }
 }

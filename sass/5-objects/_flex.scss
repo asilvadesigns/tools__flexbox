@@ -4,7 +4,7 @@
     padding: rhythm(.25);
     counter-reset: flex;
     border: rhythm(.125) solid $flex__parent__border;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 .flex__child {
     padding: rhythm(1);
