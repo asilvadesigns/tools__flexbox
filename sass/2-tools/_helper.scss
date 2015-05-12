@@ -4,8 +4,10 @@
 .count__increment {
     position: relative;
     &:before {
-        position: absolute;
-        left: -1.2em;
+        @include media(mobile--min) {
+            position: absolute;
+            left: -1.2em;
+        }
         counter-increment: section;
         content: counter(section);
     }
